@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Signup Form</title>
+  <meta name="description" content="A signup form with validation">
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Signup</h1>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <!-- Signup Form -->
+    <form id="signupForm" novalidate>
+      <!-- Full Name -->
+      <label for="fullName">Full Name</label>
+      <input 
+        type="text" 
+        id="fullName" 
+        name="fullName" 
+        required 
+        placeholder="e.g. John Doe" 
+        aria-required="true"
+      >
+
+      <!-- Email -->
+      <label for="email">Email</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        placeholder="e.g. john@example.com" 
+        aria-required="true"
+      >
+
+      <!-- Password -->
+      <label for="password">Password</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        required 
+        placeholder="Minimum 8 characters" 
+        aria-required="true"
+      >
+
+      <!-- Confirm Password -->
+      <label for="confirmPassword">Confirm Password</label>
+      <input 
+        type="password" 
+        id="confirmPassword" 
+        name="confirmPassword" 
+        required 
+        placeholder="Re-type your password" 
+        aria-required="true"
+      >
+
+      <!-- Date of Birth -->
+      <label for="dob">Date of Birth</label>
+      <input 
+        type="text" 
+        id="dob" 
+        name="dob" 
+        required 
+        placeholder="dd/mm/yyyy" 
+        aria-required="true"
+      >
+
+      <!-- Radio Buttons (Student or Employee) -->
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="role" value="Student" required>
+          Student
+        </label>
+        <label>
+          <input type="radio" name="role" value="Employee" required>
+          Employee
+        </label>
+      </div>
+
+      <!-- Checkbox (Terms and Conditions) -->
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to all the Terms and conditions
+        </label>
+      </div>
+
+      <!-- Feedback Area (for errors/success messages) -->
+      <div id="formFeedback"></div>
+
+      <!-- Submit Button -->
+      <button type="submit">Signup</button>
+    </form>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Your Company Name</p>
+  </footer>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
